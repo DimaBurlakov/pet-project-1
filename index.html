@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Практика Django</title>
+</head>
+<body>
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-primary bg-primary">
+		 <div class="container-fluid">
+		  <a class="navbar-brand" href="#" style="color: #fff;">DimaBur</a>
+		  <a href="#" class="navbar-brand">
+		     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="30" height="30" alt="logo">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		       <li class="nav-item">
+		         <a class="nav-link active" aria-current="page" href="#" style="color: #fff;">Главная</a>
+		       </li>
+		       <li class="nav-item">
+		         <a class="nav-link" href="#" style="color: #fff;">Контакты</a>
+		       </li> 
+		     </ul>
+		     <form class="d-flex">
+		       <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+		       <button class="btn btn-outline-info me-2" type="submit">Поиск</button>
+		     </form>
+		     <a href="#" class="btn btn-outline-light me-2">Вход</a>
+		     <a href="#" class="btn btn-outline-light me-2">Регистрация</a>
+		     <a href="#" class="btn btn-outline-light">Выход</a>
+		   </div>
+		 </div>
+	</nav>
+	<div class="container-fluid my__carousel">
+		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+			<div class="carousel-indicators">
+			   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+			   <div class="carousel-item active">
+			     <img src="img/1slide.jpg" class="d-block w-100" alt="...">
+			   </div>
+			   <div class="carousel-item">
+			     <img src="img/2slide.jpg" class="d-block w-100" alt="...">
+			   </div>
+			   <div class="carousel-item">
+			     <img src="img/2slide (2).jpg" class="d-block w-100" alt="...">
+			   </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+			   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			   <span class="visually-hidden">Предыдущий</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+			   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			   <span class="visually-hidden">Следующий</span>
+			</button>
+		</div>
+	</div>
+	<div class="container">
+
+	   <h1 class="my-3">Последние записи блога</h1>
+	   <div class="row">
+
+	        <div class="col-md-4">
+	            <div class="card mb-4 shadow-sm">
+	                <img src="img/1card.jpg" alt="" class="card-img-top">
+	                <div class="card-body">
+	                    <h4 class="card-title">Марс</h4>
+	                    <p class="card-text">Это красткое описание поста. Это красткое описание поста. Это красткое описание поста. </p>
+	                    <div class="d-flex justify-content-between align-items-center">
+	                        <div class="btn-group">
+	                            <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+	                        </div>
+	                        <small class="text-muted">22.10.2020</small>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="col-md-4">
+	            <div class="card mb-4 shadow-sm">
+	                <img src="img/2card.jpg" alt="" class="card-img-top">
+	                <div class="card-body">
+	                    <h4 class="card-title">Земля</h4>
+	                    <p class="card-text">Это красткое описание поста. Это красткое описание поста. Это красткое описание поста. </p>
+	                    <div class="d-flex justify-content-between align-items-center">
+	                        <div class="btn-group">
+	                            <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+	                        </div>
+	                        <small class="text-muted">21.10.2020</small>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="col-md-4">
+	            <div class="card mb-4 shadow-sm">
+	                <img src="img/3card.jpg" alt="" class="card-img-top">
+	                <div class="card-body">
+	                    <h4 class="card-title">Затмение</h4>
+	                    <p class="card-text">Это красткое описание поста. Это красткое описание поста. Это красткое описание поста. </p>
+	                    <div class="d-flex justify-content-between align-items-center">
+	                        <div class="btn-group">
+	                            <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+	                        </div>
+	                        <small class="text-muted">20.10.2020</small>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="col-md-4">
+	            <div class="card mb-4 shadow-sm">
+	                <img src="img/4card.jpg" alt="" class="card-img-top">
+	                <div class="card-body">
+	                    <h4 class="card-title">Скоплени звезд</h4>
+	                    <p class="card-text">Это красткое описание поста. Это красткое описание поста. Это красткое описание поста. </p>
+	                    <div class="d-flex justify-content-between align-items-center">
+	                        <div class="btn-group">
+	                            <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+	                        </div>
+	                        <small class="text-muted">19.10.2020</small>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="col-md-4">
+	            <div class="card mb-4 shadow-sm">
+	                <img src="img/5card.jpg" alt="" class="card-img-top">
+	                <div class="card-body">
+	                    <h4 class="card-title">Черная Дыра</h4>
+	                    <p class="card-text">Это красткое описание поста. Это красткое описание поста. Это красткое описание поста. </p>
+	                    <div class="d-flex justify-content-between align-items-center">
+	                        <div class="btn-group">
+	                            <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+	                        </div>
+	                        <small class="text-muted">18.10.2020</small>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="col-md-4">
+	            <div class="card mb-4 shadow-sm">
+	                <img src="img/6card.jpg" alt="" class="card-img-top">
+	                <div class="card-body">
+	                    <h4 class="card-title">Млечный Путь</h4>
+	                    <p class="card-text">Это красткое описание поста. Это красткое описание поста. Это красткое описание поста. </p>
+	                    <div class="d-flex justify-content-between align-items-center">
+	                        <div class="btn-group">
+	                            <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+	                        </div>
+	                        <small class="text-muted">17.10.2020</small>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	   </div>
+	</div>
+	<nav aria-label="Page navigation example">
+	   <ul class="pagination justify-content-center">
+	     <li class="page-item disabled">
+	       <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Предыдущая</a>
+	     </li>
+	     <li class="page-item"><a class="page-link" href="#">1</a></li>
+	     <li class="page-item"><a class="page-link" href="#">2</a></li>
+	     <li class="page-item"><a class="page-link" href="#">3</a></li>
+	     <li class="page-item">
+	       <a class="page-link" href="#">Следующая</a>
+	     </li>
+	   </ul>
+	</nav>
+	<footer class="footer">
+	    <div class="container my__container">
+	        <span class="text-muted">Агентство по разработке потрясных сайтов на bootstrap, drf и nuxtJS. А это просто наш блог.</span>
+	        <div class="up">
+	            <a href="#">Наверх</a>
+	        </div>
+	        
+	    </div>
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
